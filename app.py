@@ -223,11 +223,11 @@ if predict_button:
                 if prediction[0] == 1:
                     st.error("⚠️ **HIGH RISK**")
                     st.markdown(
-                        "The model predicts that the patient **has heart disease**.")
+                        "The model predicts that the patient **is likely to have a heart disease**.")
                 else:
                     st.success("✅ **LOW RISK**")
                     st.markdown(
-                        "The model predicts that the patient **does not have heart disease**.")
+                        "The model predicts that the patient **is not likely to have heart disease**.")
 
             with result_col2:
                 st.markdown("### Confidence Levels")
